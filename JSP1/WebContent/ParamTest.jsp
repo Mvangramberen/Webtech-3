@@ -24,10 +24,12 @@
 		<ul>
 			<%
 				for(String lector: lectors){
-					%><li> <%= lector %></li>
-				<%}}  %>
+			%>
+		<li> 
+			<%= lector %>
+		</li>
+			<%}}%>
 			
-		
 		</ul>
 	
 	
