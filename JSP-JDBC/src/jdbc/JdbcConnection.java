@@ -4,7 +4,10 @@ import java.sql.*;
 import java.util.ArrayList;
 
 /*
- * 
+ * Made a SQL database with folowing specifications
+ * Schema : students
+ * Tables : students
+ * colums of table students: firstname VARCHAR(40), lastname VARCHAR(40), grade INT
  */
 
 
