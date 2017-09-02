@@ -1,3 +1,4 @@
+package Objects;
 public class Student {
 	/*
 	 * To auto generate getters and setters in Eclipse

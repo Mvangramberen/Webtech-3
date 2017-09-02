@@ -9,9 +9,11 @@
 <body>
 
 <form method="POST" action="Result.jsp" >
-<input type="text" name="firstname" size=20><br>
-<input type="text" name="lastname" size=20><br>
-<input type="text" name="grade" size=20><br>
+
+<!-- The "name" field should identical to the attribute of the Java object ! ( Capital sensitive)  -->
+Firstname : <input type="text" name="firstName" size=20><br>
+Lastname : <input type="text" name="lastName" size=20><br>
+Grade : <input type="text" name="grade" size=20><br>
 
 <input type="submit" value="Save">
 

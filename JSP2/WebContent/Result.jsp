@@ -2,7 +2,9 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<jsp:useBean id="myStudent" class="Student" scope="session"/>
+<!-- id should be identical to the name of the Java object
+	 Java classes should always be located in a package ! -->
+<jsp:useBean id="student" class="Objects.Student" scope="session"/>
 <jsp:setProperty property="*" name="student"/>
 
 <html>
@@ -12,9 +14,9 @@
 </head>
 <body>
 
-<p>Firstname = <%= myStudent.getFirstName() %></p>
-<p>Lastname = <%= myStudent.getLastName() %></p>
-<p>Grade ( from object ) = <%= myStudent.getGrade() %></p>
+<p>Firstname = <%= student.getFirstName() %></p>
+<p>Lastname = <%= student.getLastName() %></p>
+<p>Grade ( from object ) = <%= student.getGrade() %></p>
 <p>Grade ( from request) = <%= request.getParameter("grade") %>
 </body>
 </html>
