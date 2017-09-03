@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="ToUpperWebservice" path="/ToUpperWebservice" reloadable="true" source="org.eclipse.jst.jee.server:ToUpperWebservice"/><Context docBase="toUpperClient" path="/toUpperClient" reloadable="true" source="org.eclipse.jst.jee.server:toUpperClient"/></Host>
+      <Context docBase="ToUpperWebservice" path="/ToUpperWebservice" reloadable="true" source="org.eclipse.jst.jee.server:ToUpperWebservice"/><Context docBase="toUpperClient" path="/toUpperClient" reloadable="true" source="org.eclipse.jst.jee.server:toUpperClient"/><Context docBase="SOAP-JDBC Webservice" path="/SOAP-JDBC_Webservice" reloadable="true" source="org.eclipse.jst.jee.server:SOAP-JDBC Webservice"/><Context docBase="SOAP-JDBC Client" path="/SOAP-JDBC_Client" reloadable="true" source="org.eclipse.jst.jee.server:SOAP-JDBC Client"/></Host>
     </Engine>
   </Service>
 </Server>

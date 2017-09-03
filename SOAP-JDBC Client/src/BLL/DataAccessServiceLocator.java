@@ -1,0 +1,142 @@
+/**
+ * DataAccessServiceLocator.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package BLL;
+
+public class DataAccessServiceLocator extends org.apache.axis.client.Service implements BLL.DataAccessService {
+
+    public DataAccessServiceLocator() {
+    }
+
+
+    public DataAccessServiceLocator(org.apache.axis.EngineConfiguration config) {
+        super(config);
+    }
+
+    public DataAccessServiceLocator(java.lang.String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
+        super(wsdlLoc, sName);
+    }
+
+    // Use to get a proxy class for DataAccess
+    private java.lang.String DataAccess_address = "http://localhost:8080/SOAP-JDBC_Webservice/services/DataAccess";
+
+    public java.lang.String getDataAccessAddress() {
+        return DataAccess_address;
+    }
+
+    // The WSDD service name defaults to the port name.
+    private java.lang.String DataAccessWSDDServiceName = "DataAccess";
+
+    public java.lang.String getDataAccessWSDDServiceName() {
+        return DataAccessWSDDServiceName;
+    }
+
+    public void setDataAccessWSDDServiceName(java.lang.String name) {
+        DataAccessWSDDServiceName = name;
+    }
+
+    public BLL.DataAccess getDataAccess() throws javax.xml.rpc.ServiceException {
+       java.net.URL endpoint;
+        try {
+            endpoint = new java.net.URL(DataAccess_address);
+        }
+        catch (java.net.MalformedURLException e) {
+            throw new javax.xml.rpc.ServiceException(e);
+        }
+        return getDataAccess(endpoint);
+    }
+
+    public BLL.DataAccess getDataAccess(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+        try {
+            BLL.DataAccessSoapBindingStub _stub = new BLL.DataAccessSoapBindingStub(portAddress, this);
+            _stub.setPortName(getDataAccessWSDDServiceName());
+            return _stub;
+        }
+        catch (org.apache.axis.AxisFault e) {
+            return null;
+        }
+    }
+
+    public void setDataAccessEndpointAddress(java.lang.String address) {
+        DataAccess_address = address;
+    }
+
+    /**
+     * For the given interface, get the stub implementation.
+     * If this service has no port for the given interface,
+     * then ServiceException is thrown.
+     */
+    public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
+        try {
+            if (BLL.DataAccess.class.isAssignableFrom(serviceEndpointInterface)) {
+                BLL.DataAccessSoapBindingStub _stub = new BLL.DataAccessSoapBindingStub(new java.net.URL(DataAccess_address), this);
+                _stub.setPortName(getDataAccessWSDDServiceName());
+                return _stub;
+            }
+        }
+        catch (java.lang.Throwable t) {
+            throw new javax.xml.rpc.ServiceException(t);
+        }
+        throw new javax.xml.rpc.ServiceException("There is no stub implementation for the interface:  " + (serviceEndpointInterface == null ? "null" : serviceEndpointInterface.getName()));
+    }
+
+    /**
+     * For the given interface, get the stub implementation.
+     * If this service has no port for the given interface,
+     * then ServiceException is thrown.
+     */
+    public java.rmi.Remote getPort(javax.xml.namespace.QName portName, Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
+        if (portName == null) {
+            return getPort(serviceEndpointInterface);
+        }
+        java.lang.String inputPortName = portName.getLocalPart();
+        if ("DataAccess".equals(inputPortName)) {
+            return getDataAccess();
+        }
+        else  {
+            java.rmi.Remote _stub = getPort(serviceEndpointInterface);
+            ((org.apache.axis.client.Stub) _stub).setPortName(portName);
+            return _stub;
+        }
+    }
+
+    public javax.xml.namespace.QName getServiceName() {
+        return new javax.xml.namespace.QName("http://BLL", "DataAccessService");
+    }
+
+    private java.util.HashSet ports = null;
+
+    public java.util.Iterator getPorts() {
+        if (ports == null) {
+            ports = new java.util.HashSet();
+            ports.add(new javax.xml.namespace.QName("http://BLL", "DataAccess"));
+        }
+        return ports.iterator();
+    }
+
+    /**
+    * Set the endpoint address for the specified port name.
+    */
+    public void setEndpointAddress(java.lang.String portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
+        
+if ("DataAccess".equals(portName)) {
+            setDataAccessEndpointAddress(address);
+        }
+        else 
+{ // Unknown Port Name
+            throw new javax.xml.rpc.ServiceException(" Cannot set Endpoint Address for Unknown Port" + portName);
+        }
+    }
+
+    /**
+    * Set the endpoint address for the specified port name.
+    */
+    public void setEndpointAddress(javax.xml.namespace.QName portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
+        setEndpointAddress(portName.getLocalPart(), address);
+    }
+
+}

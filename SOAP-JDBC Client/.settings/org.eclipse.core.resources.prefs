@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/BLL/DataAccess.java=UTF-8
+encoding//src/BLL/DataAccessService.java=UTF-8
+encoding//src/BLL/DataAccessServiceLocator.java=UTF-8
+encoding//src/BLL/DataAccessSoapBindingStub.java=UTF-8
