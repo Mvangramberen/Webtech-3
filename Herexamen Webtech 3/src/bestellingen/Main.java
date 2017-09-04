@@ -1,4 +1,4 @@
-package edu.ap.rest;
+package bestellingen;
 
 import org.restlet.*;
 import org.restlet.data.Protocol;
@@ -13,7 +13,7 @@ public class Main {
 	    component.getServers().add(Protocol.HTTP, 8080);  
 
 	    // Attach the sample application.  
-	    component.getDefaultHost().attach("/ziekenhuis",  new BestellingApplication());  
+	    component.getDefaultHost().attach("/bol",  new BestellingApplication());  
 
 	    // Start the component.  
 	    component.start();  

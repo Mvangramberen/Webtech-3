@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bestellingen>
+
+<bestelling nameCustomer="Gilles Vercammen" adress="Boerengat 65" orderDate="04/09/2017" product="World of warcraft" ammount="5">
+</bestelling>
+
+<bestelling nameCustomer="Gilles Vercammen" adress="Boerengat 65" orderDate="04/09/2017" product="Desktop" ammount="1">
+</bestelling>
+
+
+
+</bestellingen>

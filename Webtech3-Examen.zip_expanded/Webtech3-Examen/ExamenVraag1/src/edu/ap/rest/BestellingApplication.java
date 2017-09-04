@@ -4,7 +4,7 @@ import org.restlet.Application;
 import org.restlet.Restlet;
 import org.restlet.routing.Router;
 
-public class ZiekenhuisApplication extends Application {
+public class BestellingApplication extends Application {
 
 	
 	@Override
