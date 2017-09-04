@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <patients>
+    <patient datehour="25/01/2017 - 13:00" dobPatient="19/04/1997" id="1" nameNurse="Olga Coutrin" namePatient="Jeremy Keusters">
+      <diagnose>Verkoudheidje</diagnose>
+    </patient>
+    <patient datehour="25/01/2017 - 15:00" dobPatient="19/04/1997" id="2" nameNurse="Ingeborg Van Osselaer" namePatient="Philippe Possemiers">
+      <diagnose>Griep</diagnose>
+    </patient>
+  </patients>
