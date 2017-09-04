@@ -1,0 +1,6 @@
+{
+"name" :"producten",
+"size" :"2",
+"result":[{	"product":"world of warcraft", "producent":"Blizzart", "prijs":"50 Euro" },{"product":"Desktop","producent":"HP","prijs":"500 Euro"}]
+
+}
